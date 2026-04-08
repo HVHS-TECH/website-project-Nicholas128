@@ -42,18 +42,27 @@ div{
   height: 200px;
 }
 
-.audio1{
-position:absolute;
-left:30cm;
-}
-
-
-
 .band {
    display: flex;
   justify-content: center;
   align-items: center;
 }
+
+audio {
+  position: fixed;
+  left: 6cm;
+}
+
+.audio2 {
+  position: fixed;
+  left: 16cm;
+}
+
+.audio3 {
+  position: fixed;
+  left: 20cm; 
+}
+
 </style>
 </head>
 <body>
@@ -80,13 +89,27 @@ left:30cm;
 </div> 
 </div>
 
-<audio controls>
-  <div class="audio1">
-  <source src="/music/burn.wav" type="audio/mpeg">
-  </div>
-  <source src="/music/Anarchy.wav" type="audio/mpeg">
-  <source src="/music/Fangels.wav" type="audio/mpeg">
-</audio>
+
+<div class="audio">
+  <audio controls>
+    <source src="music/burn.wav" type="audio/wav">
+  </audio>
+</div>
+
+<div class="audio2">
+  <audio controls>
+    <source src="music/Anarchy.wav" type="audio/wav">
+  </audio>
+</div>
+
+<div class="audio3">
+  <audio controls>
+    <source src="music/Fangels.wav" type="audio/wav">
+  </audio>
+</div>
+  
+
+
 
 </body>
 </html>
