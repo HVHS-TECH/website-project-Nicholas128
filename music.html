@@ -42,9 +42,17 @@ div{
   height: 200px;
 }
 
-img {
-  width:100%;
-  height:auto;
+.audio1{
+position:absolute;
+left:30cm;
+}
+
+
+
+.band {
+   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 </style>
 </head>
@@ -66,9 +74,20 @@ img {
 </div>
 </div>
 
+<div class="band">
 <div>
 <a href="https://soundcloud.com/triple01-band/burn"><img src="images/Triple01 burn img.png" alt="Triple01 burn - Demo"></a> <a href="https://soundcloud.com/triple01-band/anarchy"><img src="images/Triple01 Anarchy img.png" alt="Triple01 Anarchy - Demo"></a>  <a href="https://soundcloud.com/triple01-band/fangels"><img src="images/Triple01 Fangels img.png" alt="Triple01 Fangels - Demo"></a> 
 </div> 
+</div>
+
+<audio controls>
+  <div class="audio1">
+  <source src="/music/burn.wav" type="audio/mpeg">
+  </div>
+  <source src="/music/Anarchy.wav" type="audio/mpeg">
+  <source src="/music/Fangels.wav" type="audio/mpeg">
+</audio>
+
 </body>
 </html>
 
